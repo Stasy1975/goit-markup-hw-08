@@ -1,0 +1,188 @@
+/* footer */
+.logo__footer {
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+.logo__end--white {
+    color: var(--white-color);
+}
+.address {
+    font-style: normal;
+    margin-top: 20px; 
+    width: 231px;
+    margin-right: 0;
+
+    &__link {
+    color: rgba(255, 255, 255, 0.6);
+     
+}
+&__item {
+    margin-bottom: 9px;
+
+&:last-child {
+    margin-bottom: 0;
+}
+    
+}
+}
+
+.footer {
+    display: flex;
+    background-color: $bcgfooter;
+    color: var(--white-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    max-width: 1600px;
+    margin-right: auto;
+    margin-left: auto;
+    
+&__container{
+    display: flex;
+    align-items: baseline;
+}
+&__address{
+    margin-right: 70px;
+}
+
+    &__list{
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+           }
+
+    &__title{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+                color: var(--white-color);
+    }
+    &__item {
+        margin-right: 10px;
+    
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+&__icon {
+    fill: var(--white-color);
+    transition: fill 250ms $way;
+}
+
+&__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: $footer_icon;
+    border-radius: 50%;
+    transition: background-color 250ms $way;
+    
+    &:hover,
+    &:focus {
+        background-color: var(--hover-color);
+    }
+    
+    &:hover .team__icon,
+    &:focus .team__icon {
+        fill: #ffffff;
+    }
+}}
+
+.subscription{
+    margin-left: 93px;
+    
+
+&__title{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--white-color);
+        margin-bottom: 20px;
+        }
+
+
+            &__field {
+                display: flex;
+               position: relative;
+               height: 58px;
+                box-sizing: border-box;
+            
+            }
+
+&__form {
+    display: flex;
+}
+
+&__btn{
+    display: block;
+    align-items: center;
+    font-family: inherit;
+    cursor: pointer;
+    background: var(--hover-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--white-color);
+    margin: 0 auto;
+    width: 200px;
+    height: 50px;
+    border: none;
+    margin-left: 12px;
+    transition: background-color 250ms $way;
+    
+    &:hover,
+    &:focus {
+        background-color: #188ce8;
+    }
+    }
+    &__submit{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    &__icon{
+        margin-left: 10px;
+    }
+    &__input{
+        width: 358px;
+        height: 50px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 4px;
+        background-color: $bcgfooter;
+        color: rgba(255, 255, 255, 0.6);;
+
+        &::placeholder{
+            font-size: 16px;
+            line-height: 20px;
+            color: rgba(255, 255, 255, 0.6);
+            padding-left: 16px;
+        }
+
+    }
+
+
+   
+}
+
+
+
+
+
+
+
+
+
+
