@@ -52,7 +52,7 @@
           </li>
         </ul>
 
-        <button type="button" class="menu" aria-label="кнопка меню">
+        <button type="button" class="menu" aria-label="кнопка меню" data-menu-button   aria-expended="false">
           <svg class="menu__icon" height="40px" width="40px">
                 <use class="menu__icon--open" href="./img/symbol-defs.svg#menu_40px"></use>
                 <use class="menu__icon--close" href="./img/symbol-defs.svg#close_40px"></use>
@@ -61,7 +61,7 @@
    
       <!-- Мобільне меню -->
   
-      <div class="mobile-menu">
+      <div class="mobile-menu" data-menu>
 
           <nav class="mobile-nav">
           <ul class="mobile-nav__list list">
@@ -110,16 +110,16 @@
     
     </header>
 
-    <!-- <main> -->
+    <main>
       <!-- Герой -->
-      <!-- <section class="overlay">
+      <section class="overlay">
         <div class="hero container">
           <h1 class="hero__idea">
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
           <!-- Модальне вікно -->
-          <!-- <button class="hero__btn" type="button" data-modal-open>Заказать услугу</button>
+          <button class="hero__btn" type="button" data-modal-open>Заказать услугу</button>
           <div class="backgrop is-hidden" data-modal>
             <div class="modal">
               <button class="btn__close" type="button" data-modal-close>
@@ -177,8 +177,8 @@
               </form>
             </div>
           </div>
-        </div> -->
-      </section> -->
+        </div>
+      </section>
 
       <!-- Наши преимущества -->
       <!-- <section class="excellence">
@@ -451,7 +451,7 @@
       </section> -->
     </main>
 
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="footer__container container">
         <div class="footer__address">
           <a class="logo__footer link" href="./index.html"
@@ -519,7 +519,8 @@
           </div>
         </form>
       </div>
-    </footer> -->
+    </footer>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
