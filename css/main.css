@@ -54,18 +54,43 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
 .second-topic {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .second-topic {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 img {
@@ -105,9 +130,15 @@ img {
 }
 
 .pages {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .pages {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .pages__name {
@@ -150,9 +181,15 @@ img {
 }
 
 .contact {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .contact {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
 }
 
 .contact__link {
@@ -188,6 +225,27 @@ img {
 .contact__link:hover > .contact__icon,
 .contact__link:focus > .contact__icon {
   fill: var(--hover-color);
+}
+
+.menu {
+  padding: 0;
+  border: none;
+  color: inherit;
+  background-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
+
+.menu__icon--open {
+  opacity: 1;
+}
+
+.menu__icon--close {
+  opacity: 0;
 }
 
 .overlay {
@@ -780,7 +838,6 @@ img {
 .subscription__field {
   display: flex;
   position: relative;
-  margin-bottom: 10px;
   height: 58px;
   box-sizing: border-box;
 }
