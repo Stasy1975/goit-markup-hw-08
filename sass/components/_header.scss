@@ -158,6 +158,8 @@ display: none;
     @media screen and (min-width:768px){
        display: none; 
     }
+
+    
     &__icon{
       
 
@@ -165,7 +167,7 @@ display: none;
             opacity: 1;
         }
         &--close{
-         opacity: 0;
+         opacity: 1;
         }
     }
   }

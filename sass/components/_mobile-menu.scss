@@ -2,8 +2,11 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
+    // min-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
     padding-left: 40px;
     padding-top: 48px;
     padding-bottom: 48px;
@@ -35,7 +38,9 @@
         }
     }
 }
-
+.active {
+  color: var(--hover-color);
+}
 .mobile-contact{
 font-weight: 500;
 letter-spacing: 0.02em;
@@ -66,13 +71,11 @@ letter-spacing: 0.02em;
 
 
 .mobile-social{
-
-&__list{
-    display: flex;
+display: flex;
 flex-wrap: wrap;
    
    
- }
+ 
 &__item{
     border-right: 1px solid rgba(33, 33, 33, 0.2);
     padding-right: 10px;
