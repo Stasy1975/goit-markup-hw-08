@@ -277,15 +277,18 @@ img {
   opacity: 0;
 }
 
-.menu.is-active .menu__icon--open {
+.menu.is-open .menu__icon--open {
   opacity: 0;
 }
 
-.menu.is-active .menu__icon--close {
+.menu.is-open .menu__icon--close {
   opacity: 1;
 }
 
 .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
@@ -316,10 +319,6 @@ img {
 
 .mobile-nav__name {
   margin-bottom: 32px;
-}
-
-.mobile-nav__name:last-child {
-  margin-bottom: 305px;
 }
 
 .mobile-nav__link {
@@ -482,6 +481,7 @@ img {
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 9;
+  overflow-y: scroll;
 }
 
 .backgrop.is-hidden {
@@ -500,13 +500,21 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(360deg);
-  min-width: 528px;
-  min-height: 581px;
+  width: 100%;
+  max-width: 450px;
+  max-height: 609px;
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   opacity: 1;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-width: 528px;
+    min-height: 581px;
+  }
 }
 
 .btn__close {
@@ -622,14 +630,27 @@ img {
   display: flex;
   align-items: center;
   position: relative;
-  padding-left: 12px;
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 1200px) {
+  .license {
+    padding-left: 12px;
+  }
+}
+
 .license__text {
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--second-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .license__text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .license__checkbox {
@@ -1292,12 +1313,19 @@ img {
 }
 
 .subscription__input {
-  width: 358px;
+  width: 100vw;
+  max-width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: #2F303A;
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (min-width: 1200px) {
+  .subscription__input {
+    width: 358px;
+  }
 }
 
 .subscription__input::placeholder {

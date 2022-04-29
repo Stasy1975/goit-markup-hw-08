@@ -8,6 +8,7 @@
     color: inherit;
     background-color: transparent;
     z-index: 99;
+    // overflow-y: scroll;
 
     &:focus,
     &:hover {
@@ -33,16 +34,19 @@
     }
 }
 
-.menu.is-active .menu__icon--open {
+.menu.is-open .menu__icon--open {
     opacity: 0;
 }
 
-.menu.is-active .menu__icon--close {
+.menu.is-open .menu__icon--close {
     opacity: 1;
 }
 
 
 .mobile-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: fixed;
     top: 0;
     left: 0;
@@ -72,9 +76,7 @@
 .mobile-nav{
        &__name{
         margin-bottom: 32px ;
-        &:last-child{
-        margin-bottom: 305px;
-        }
+   
     }
 
     &__link{

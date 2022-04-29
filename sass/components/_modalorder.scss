@@ -96,14 +96,23 @@ color: var(--second-color);
     display: flex;
     align-items: center;
     position: relative;
-    padding-left: 12px;
-    margin-bottom: 30px;
-
- 
+       margin-bottom: 30px;
+@media screen and(min-width:1200px) {
+ padding-left: 12px;}
 &__text{
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--second-color);
+font-size: 12px;
+line-height: 1.17;
+letter-spacing: 0.03em;
+color: var(--second-color);
+
+@media screen and(min-width:1200px) {
+ font-size: 14px; 
+  line-height: 1.71; 
+}
+
+    
+  
+    
 }
 &__checkbox{
     appearance: none;

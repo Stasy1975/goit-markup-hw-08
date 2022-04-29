@@ -8,6 +8,7 @@
     opacity: 1;
     transition: opacity 250ms $way, visibility 250ms $way;
     z-index: 9; 
+    overflow-y: scroll;
 }
 
 .backgrop.is-hidden
@@ -20,6 +21,7 @@
 .backgrop.is-hidden .modal{
   opacity: 0;
   transform: translate(-50%, -50%);
+
 }
 
 .modal{
@@ -27,8 +29,9 @@
  top: 50%;
  left: 50%;
  transform: translate(-50%,-50%) rotate(360deg);
- min-width: 528px;   
- min-height: 581px;
+ width: 100%;
+max-width: 450px;   
+ max-height: 609px;
  background-color: var(--white-color);
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -37,6 +40,10 @@ border-radius: 4px;
 opacity: 1;
 transition: transform 250ms $way, opacity 250ms $way;
 
+@media screen and (min-width:1200px) {
+  min-width: 528px;
+  min-height: 581px;
+}
 
 }
 .btn__close{
