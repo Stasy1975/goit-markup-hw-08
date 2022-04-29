@@ -12,6 +12,9 @@ body{
     
 }
 
+body.is-open{
+    overflow: hidden;
+}
 .container {
     // min-width: 320px;
     width: 100%;

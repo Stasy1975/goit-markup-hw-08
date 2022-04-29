@@ -6,6 +6,8 @@
     menuBtnRef.addEventListener("click", () => {
         const expanded =
             menuBtnRef.getAttribute("aria-expended") === "true" || false;
+    
+        document.body.classList.toggle("is-open")
         
         menuBtnRef.classList.toggle("is-open");
         menuBtnRef.setAttribute("aria-expended", !expanded);
