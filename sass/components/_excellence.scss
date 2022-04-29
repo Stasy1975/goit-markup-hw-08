@@ -40,7 +40,7 @@ display: block;
 }
 
 &__item {
-&:not(last-child){
+&:not(:last-child){
     margin-bottom: 30px;
 }
 

@@ -715,7 +715,7 @@ img {
   }
 }
 
-.excellence__item:not(last-child) {
+.excellence__item:not(:last-child) {
   margin-bottom: 30px;
 }
 
@@ -769,7 +769,14 @@ img {
 
 /* Примеры */
 .exx {
-  padding-bottom: 94px;
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .exx {
+    display: block;
+    padding-bottom: 94px;
+  }
 }
 
 .exx__list {

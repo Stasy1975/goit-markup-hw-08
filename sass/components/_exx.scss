@@ -1,9 +1,19 @@
 /* Примеры */
 .exx {
-    padding-bottom: 94px;
-    &__list {
-    display: flex;
-    flex-direction: row;
+display: none;
+
+@media screen and (min-width:1200px){
+display: block;
+padding-bottom: 94px;    
+}
+    
+    
+&__list {
+   
+     display: flex;
+    flex-direction: row;    
+    
+   
 }
 
 &__item {
