@@ -43,8 +43,8 @@ transition: transform 250ms $way, opacity 250ms $way;
 overflow-y: scroll;
 
 @media screen and (min-width:1200px) {
-  max-width: 528px;
-  max-height: 581px;
+  min-width: 528px;
+  min-height: 581px;
 }
 
 }
