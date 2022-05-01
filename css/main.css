@@ -803,6 +803,9 @@ img {
   .excellence__item:last-child {
     margin-right: 0;
   }
+  .excellence__item:not(:last-child) {
+    margin-bottom: 0px;
+  }
 }
 
 .excellence__icon {
@@ -897,6 +900,8 @@ img {
 }
 
 .team__list {
+  display: flex;
+  flex-direction: column;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -906,14 +911,8 @@ img {
 
 @media screen and (min-width: 768px) {
   .team__list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .team__list {
     flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 
@@ -924,15 +923,6 @@ img {
   border-radius: 0px 0px 4px 4px;
   width: 100%;
   max-width: 450px;
-}
-
-@media screen and (max-width: 767px) {
-  .team__item {
-    margin-bottom: 30px;
-  }
-  .team__item:last-child {
-    margin-bottom: 0;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1043,12 +1033,6 @@ img {
   .klients__item {
     width: 170px;
   }
-  .klients__item:first-child {
-    margin-left: 0;
-  }
-  .klients__item:last-child {
-    margin-right: 0;
-  }
 }
 
 .klients__icon {
@@ -1114,14 +1098,7 @@ img {
 .address {
   font-style: normal;
   margin-top: 20px;
-  margin-bottom: 60px;
   margin-right: 0;
-}
-
-@media screen and (min-width: 1200px) {
-  .address {
-    margin-bottom: 60px;
-  }
 }
 
 .address__link {
@@ -1143,25 +1120,10 @@ img {
 }
 
 .footer {
-  max-width: 480px;
   background-color: #2F303A;
   color: var(--white-color);
   padding-top: 60px;
   padding-bottom: 60px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-@media screen and (min-width: 768px) {
-  .footer {
-    max-width: 768px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .footer {
-    max-width: 1600px;
-  }
 }
 
 .footer__container {
@@ -1182,6 +1144,10 @@ img {
     align-items: baseline;
     text-align: left;
   }
+}
+
+.footer__address {
+  margin-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1391,7 +1357,7 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .buttons__filtr {
+  .buttons__filtr:nth-child(-n+3) {
     margin-bottom: 0;
   }
 }
@@ -1453,7 +1419,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .portfolio__item {
-    flex-basis: calc(100% / 3 - 2 * 30px);
+    flex-basis: calc(100% / 3 - 30px);
   }
 }
 

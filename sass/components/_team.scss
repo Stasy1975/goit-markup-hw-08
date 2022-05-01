@@ -14,6 +14,8 @@ padding-bottom: 60px;
 }
     
     &__list {
+        display: flex;
+        flex-direction: column;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -24,13 +26,13 @@ padding-bottom: 60px;
 
 
 @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap
+flex-direction: row;
+   flex-wrap: wrap
 
 }
-@media screen and (min-width: 1200px) {
-    flex-direction: row;
-}
+// @media screen and (min-width: 1200px) {
+//     flex-direction: row;
+// }
 
 }
 &__item {
@@ -44,14 +46,7 @@ border-radius: 0px 0px 4px 4px;
 width: 100%;
 max-width: 450px;
 
-@media screen and (max-width: 767px) {
-    margin-bottom: 30px;
 
-    &:last-child {
-        margin-bottom: 0;
-    }
-
-}
 
 
 @media screen and (min-width: 768px) {

@@ -31,16 +31,10 @@
 .address {
     font-style: normal;
     margin-top: 20px;
-    margin-bottom: 60px;
+  
     margin-right: 0;
 
 
-
-    @media screen and (min-width:1200px) {
-        // width: 231px;
-        margin-bottom: 60px;
-
-    }
 
     &__link {
         color: rgba(255, 255, 255, 0.6);
@@ -61,21 +55,12 @@
 }
 
 .footer {
-    max-width: 480px;
     background-color: $bcgfooter;
     color: var(--white-color);
     padding-top: 60px;
     padding-bottom: 60px;
-    margin-right: auto;
-    margin-left: auto;
 
-    @media screen and (min-width:768px) {
-        max-width: 768px;
-        }
 
-    @media screen and (min-width:1200px) {
-        max-width: 1600px;
-    }
 
 
 
@@ -99,7 +84,7 @@
     }
 
     &__address {
-
+margin-bottom: 60px;
         @media screen and (min-width:1200px) {
             margin-right: 70px;
         }
